@@ -1,15 +1,9 @@
-/* Estilo General */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4F4F4; /* Fondo suave y neutral */
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    color: #333;
-}
-
-h1, h2 {
-    font-family: 'Roboto', sans-serif;
-    color: #4CAF50; /* Verde principal */
 }
 
 header {
@@ -21,60 +15,63 @@ header {
 
 h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
+h2, h3 {
+    color: #333;
 }
 
-/* Sección de CTA */
-.cta-button, .offers-button, button {
-    background-color: #8BC34A; /* Verde más suave */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
+p {
     font-size: 1.1em;
-    text-decoration: none;
+    color: #555;
 }
 
-.cta-button:hover, .offers-button:hover, button:hover {
-    background-color: #6B8E23;
-}
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.product-item {
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-item img {
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.price {
-    font-size: 1.2em;
-    color: #FF5722; /* Naranja para resaltar precios */
-    font-weight: bold;
-    margin-top: 10px;
+/* Estilos específicos */
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #388E3C;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.offer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .offer-item {
@@ -82,39 +79,16 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 20px auto;
+.contact-info, .wholesale-info {
+    text-align: center;
+    margin: 20px;
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-button:hover {
-    background-color: #388E3C;
+.contact-info p, .wholesale-info p {
+    font-size: 1.2em;
 }
